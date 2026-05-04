@@ -72,3 +72,21 @@ mvn spring-boot:run
 * Docker deployment
 
 ---
+
+
+## 📸 Screenshots
+
+### Contacts
+
+![Contacts](screenshots/contacts.png)
+![Add contact](screenshots/addContact.png)
+
+### Templates
+
+![Templates](screenshots/templates.png)
+![Add template](screenshots/addTemplate.png)
+
+### Campaigns
+
+![Campaigns](screenshots/campaigns.png)
+![Send Campaign](screenshots/sendCampaign.png)

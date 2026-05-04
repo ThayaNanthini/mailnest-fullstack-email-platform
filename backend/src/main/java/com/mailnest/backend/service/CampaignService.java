@@ -94,7 +94,8 @@ public class CampaignService {
 
             // send email
             String body = template.getBody()
-                    .replace("{{name}}", contact.getName());
+                    .replace("{{name}}", contact.getName())
+                    .replace("{{department}}", contact.getDepartment());
 
             emailService.sendEmail(
                     contact.getEmail(),

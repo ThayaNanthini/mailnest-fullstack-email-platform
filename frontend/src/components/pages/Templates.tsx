@@ -25,6 +25,7 @@ const Templates = () => {
     showToast(res.message, res.type);
     if (res.type === "success") {
       getTemplates();
+      handleClose();
     }
   }, [name, body, subject, addTemplate, getTemplates, showToast]);
 
@@ -36,6 +37,12 @@ const Templates = () => {
     if (res.type === "success") {
       getTemplates();
     }
+  };
+
+  const handleClose = () => {
+    setName("");
+    setSubject("");
+    setBody("");
   };
 
   const buttonDisabled = loading || !name || !subject || !body;
